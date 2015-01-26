@@ -1,1 +1,7 @@
-body { background: #3498db; }
+body {
+  background: #3498db;
+}
+
+img {
+  max-width: 300px;
+}
