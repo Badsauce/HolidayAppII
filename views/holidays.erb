@@ -1,7 +1,16 @@
-<% @holidays.each do |day| %>
-  <% day.each do |holiday| %>
-    <p>
-      <%= holiday['name'] %> on <%= holiday['date'] %>
-    </p>
-  <% end %>
+<form>
+  month:
+  <input name="month" type="number">
+  year:
+  <input name="year" type="number">
+  day:
+  <input name="day" type="number">
+  <button type="submit">Show me holidays</button>
+</form>
+
+
+<% @holidays.each do |holiday| %>
+  <p>
+    <%= holiday['name'] %>
+  </p>
 <% end %>

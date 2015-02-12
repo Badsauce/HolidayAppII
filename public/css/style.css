@@ -8,3 +8,10 @@ body {
 img {
   max-width: 300px;
 }
+
+p {
+  margin: auto;
+  margin-top: 1em;
+  border: 1px solid black;
+  width: 30%
+}
