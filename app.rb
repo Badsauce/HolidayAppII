@@ -1,8 +1,10 @@
 # app.rb
 require 'sinatra'
+require 'holidapi'
 
 class MyWebApp < Sinatra::Base
   get '/' do
-    erb :"index#{ rand(4) + 1 }"
+    @holidays = HolidApi.get
+    erb :holidays
   end
 end
