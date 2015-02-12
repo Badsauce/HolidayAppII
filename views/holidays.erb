@@ -1,5 +1,7 @@
-<% @holidays.each do |holi| %>
-  <p>
-    <%= holi[1]%>
-  </p>
+<% @holidays.each do |day| %>
+  <% day.each do |holiday| %>
+    <p>
+      <%= holiday['name'] %> on <%= holiday['date'] %>
+    </p>
+  <% end %>
 <% end %>
